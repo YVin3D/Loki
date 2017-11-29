@@ -1,0 +1,372 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D81F5BC61FCF7A9A0099DBCC /* loki.metal in Sources */ = {isa = PBXBuildFile; fileRef = D81F5BC41FCF7A9A0099DBCC /* loki.metal */; };
+		D81F5BC71FCF7A9A0099DBCC /* loki_header.metal in Sources */ = {isa = PBXBuildFile; fileRef = D81F5BC51FCF7A9A0099DBCC /* loki_header.metal */; };
+		D82CF0891FCF6B8800FBA4E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82CF0881FCF6B8800FBA4E6 /* AppDelegate.swift */; };
+		D82CF08B1FCF6B8800FBA4E6 /* MetalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82CF08A1FCF6B8800FBA4E6 /* MetalViewController.swift */; };
+		D82CF08D1FCF6B8800FBA4E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D82CF08C1FCF6B8800FBA4E6 /* Assets.xcassets */; };
+		D82CF0901FCF6B8800FBA4E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D82CF08E1FCF6B8800FBA4E6 /* Main.storyboard */; };
+		D82CF0A91FCF6BF900FBA4E6 /* Renderer_Shader.metal in Sources */ = {isa = PBXBuildFile; fileRef = D82CF0A81FCF6BF900FBA4E6 /* Renderer_Shader.metal */; };
+		D82CF0AC1FCF6C3000FBA4E6 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82CF0AB1FCF6C3000FBA4E6 /* Renderer.swift */; };
+		D82CF0AE1FCF6C7A00FBA4E6 /* SharedBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82CF0AD1FCF6C7A00FBA4E6 /* SharedBuffer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D81F5BC41FCF7A9A0099DBCC /* loki.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = loki.metal; sourceTree = "<group>"; };
+		D81F5BC51FCF7A9A0099DBCC /* loki_header.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = loki_header.metal; sourceTree = "<group>"; };
+		D82CF0851FCF6B8800FBA4E6 /* Loki-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Loki-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D82CF0881FCF6B8800FBA4E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D82CF08A1FCF6B8800FBA4E6 /* MetalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalViewController.swift; sourceTree = "<group>"; };
+		D82CF08C1FCF6B8800FBA4E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D82CF08F1FCF6B8800FBA4E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D82CF0911FCF6B8800FBA4E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D82CF0921FCF6B8800FBA4E6 /* Loki_Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Loki_Demo.entitlements; sourceTree = "<group>"; };
+		D82CF0A81FCF6BF900FBA4E6 /* Renderer_Shader.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Renderer_Shader.metal; sourceTree = "<group>"; };
+		D82CF0AB1FCF6C3000FBA4E6 /* Renderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		D82CF0AD1FCF6C7A00FBA4E6 /* SharedBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedBuffer.swift; sourceTree = "<group>"; };
+		D82CF0B01FCF70DC00FBA4E6 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		D82CF0B11FCF70DC00FBA4E6 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D82CF0821FCF6B8800FBA4E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D81F5BC31FCF7A9A0099DBCC /* Loki */ = {
+			isa = PBXGroup;
+			children = (
+				D81F5BC41FCF7A9A0099DBCC /* loki.metal */,
+				D81F5BC51FCF7A9A0099DBCC /* loki_header.metal */,
+			);
+			path = Loki;
+			sourceTree = "<group>";
+		};
+		D82CF07C1FCF6B8800FBA4E6 = {
+			isa = PBXGroup;
+			children = (
+				D82CF0871FCF6B8800FBA4E6 /* Loki-Demo */,
+				D82CF0861FCF6B8800FBA4E6 /* Products */,
+				D82CF0AF1FCF70DC00FBA4E6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D82CF0861FCF6B8800FBA4E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D82CF0851FCF6B8800FBA4E6 /* Loki-Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D82CF0871FCF6B8800FBA4E6 /* Loki-Demo */ = {
+			isa = PBXGroup;
+			children = (
+				D82CF0881FCF6B8800FBA4E6 /* AppDelegate.swift */,
+				D82CF08C1FCF6B8800FBA4E6 /* Assets.xcassets */,
+				D82CF0AA1FCF6C0400FBA4E6 /* Renderer */,
+				D81F5BC31FCF7A9A0099DBCC /* Loki */,
+				D82CF08E1FCF6B8800FBA4E6 /* Main.storyboard */,
+				D82CF0911FCF6B8800FBA4E6 /* Info.plist */,
+				D82CF0921FCF6B8800FBA4E6 /* Loki_Demo.entitlements */,
+			);
+			path = "Loki-Demo";
+			sourceTree = "<group>";
+		};
+		D82CF0AA1FCF6C0400FBA4E6 /* Renderer */ = {
+			isa = PBXGroup;
+			children = (
+				D82CF08A1FCF6B8800FBA4E6 /* MetalViewController.swift */,
+				D82CF0AD1FCF6C7A00FBA4E6 /* SharedBuffer.swift */,
+				D82CF0AB1FCF6C3000FBA4E6 /* Renderer.swift */,
+				D82CF0A81FCF6BF900FBA4E6 /* Renderer_Shader.metal */,
+			);
+			path = Renderer;
+			sourceTree = "<group>";
+		};
+		D82CF0AF1FCF70DC00FBA4E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D82CF0B11FCF70DC00FBA4E6 /* Metal.framework */,
+				D82CF0B01FCF70DC00FBA4E6 /* MetalKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D82CF0841FCF6B8800FBA4E6 /* Loki-Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D82CF0951FCF6B8800FBA4E6 /* Build configuration list for PBXNativeTarget "Loki-Demo" */;
+			buildPhases = (
+				D82CF0811FCF6B8800FBA4E6 /* Sources */,
+				D82CF0821FCF6B8800FBA4E6 /* Frameworks */,
+				D82CF0831FCF6B8800FBA4E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Loki-Demo";
+			productName = "Loki-Sample";
+			productReference = D82CF0851FCF6B8800FBA4E6 /* Loki-Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D82CF07D1FCF6B8800FBA4E6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Youssef Victor";
+				TargetAttributes = {
+					D82CF0841FCF6B8800FBA4E6 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D82CF0801FCF6B8800FBA4E6 /* Build configuration list for PBXProject "Loki-Demo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D82CF07C1FCF6B8800FBA4E6;
+			productRefGroup = D82CF0861FCF6B8800FBA4E6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D82CF0841FCF6B8800FBA4E6 /* Loki-Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D82CF0831FCF6B8800FBA4E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D82CF08D1FCF6B8800FBA4E6 /* Assets.xcassets in Resources */,
+				D82CF0901FCF6B8800FBA4E6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D82CF0811FCF6B8800FBA4E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D82CF0A91FCF6BF900FBA4E6 /* Renderer_Shader.metal in Sources */,
+				D81F5BC71FCF7A9A0099DBCC /* loki_header.metal in Sources */,
+				D82CF0AE1FCF6C7A00FBA4E6 /* SharedBuffer.swift in Sources */,
+				D82CF08B1FCF6B8800FBA4E6 /* MetalViewController.swift in Sources */,
+				D82CF0AC1FCF6C3000FBA4E6 /* Renderer.swift in Sources */,
+				D81F5BC61FCF7A9A0099DBCC /* loki.metal in Sources */,
+				D82CF0891FCF6B8800FBA4E6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D82CF08E1FCF6B8800FBA4E6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D82CF08F1FCF6B8800FBA4E6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D82CF0931FCF6B8800FBA4E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = Loki_Demo.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D82CF0941FCF6B8800FBA4E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = Loki_Demo.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		D82CF0961FCF6B8800FBA4E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Loki-Demo/Loki_Demo.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = F866ZHAR49;
+				INFOPLIST_FILE = "$(SRCROOT)/Loki-Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "self.edu.Loki-Sample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		D82CF0971FCF6B8800FBA4E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Loki-Demo/Loki_Demo.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = F866ZHAR49;
+				INFOPLIST_FILE = "$(SRCROOT)/Loki-Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "self.edu.Loki-Sample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D82CF0801FCF6B8800FBA4E6 /* Build configuration list for PBXProject "Loki-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D82CF0931FCF6B8800FBA4E6 /* Debug */,
+				D82CF0941FCF6B8800FBA4E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D82CF0951FCF6B8800FBA4E6 /* Build configuration list for PBXNativeTarget "Loki-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D82CF0961FCF6B8800FBA4E6 /* Debug */,
+				D82CF0971FCF6B8800FBA4E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D82CF07D1FCF6B8800FBA4E6 /* Project object */;
+}
