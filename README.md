@@ -1,11 +1,8 @@
 ![Loki: Random Number Generator for Metal](/Images/loki-header.png)
 
+
 ___________________________________
 
-
-<div style="text-align:center"><img src ="/Images/sample.gif" /></div>
-
-screenshot from sample project
 
 ## How to Use:
 
@@ -21,4 +18,6 @@ screenshot from sample project
 
 ## Sample Project:
 
-The attached sample project simply creates a scene filled with random grey values generated using Loki. They change every frame using an `iteration` counter that is incremented each frame
+The attached sample project simply creates a scene filled with random grey values generated using Loki. They change every frame using an `iteration` counter that is incremented each frame. It should look something like this:
+
+<div style="text-align:center"><img src ="/Images/sample.gif" /></div>
