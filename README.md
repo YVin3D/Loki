@@ -1,6 +1,11 @@
-# Loki
-A Random Number Generator for Metal
+![Header.png](Loki: Random Number Generator for Metal)
 
+___________________________________
+
+
+![sample.gif]( random numbers being generated)
+
+screenshot from sample project
 
 ## How to Use:
 
