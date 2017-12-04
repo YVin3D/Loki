@@ -1,9 +1,9 @@
-![Images/Header.png](Loki: Random Number Generator for Metal)
+![/Images/Header.png](Loki: Random Number Generator for Metal)
 
 ___________________________________
 
 
-![Images/sample.gif](random numbers being generated)
+![/Images/sample.gif](random numbers being generated)
 
 screenshot from sample project
 
