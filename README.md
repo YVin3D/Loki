@@ -3,7 +3,7 @@
 ___________________________________
 
 
-![random numbers being generated](/Images/sample.gif)
+<div style="text-align:center"><img src ="/Images/sample.gif" /></div>
 
 screenshot from sample project
 
