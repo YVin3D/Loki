@@ -1,4 +1,4 @@
-![Loki: Random Number Generator for Metal](/Images/Header.png)
+![Loki: Random Number Generator for Metal](/Images/loki-header.png)
 
 ___________________________________
 
